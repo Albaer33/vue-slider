@@ -53,6 +53,7 @@ const app = new Vue(
             changeSlide: function(index) {
                 this.currentImgCounter = index;
             }
+            // to do altri 2 bonus e il created
         }
     }
 );
