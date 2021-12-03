@@ -49,6 +49,9 @@ const app = new Vue(
                 else {
                     this.currentImgCounter = this.slides.length-1;
                 }
+            },
+            changeSlide: function(index) {
+                this.currentImgCounter = index;
             }
         }
     }

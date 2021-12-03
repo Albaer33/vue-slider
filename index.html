@@ -42,7 +42,7 @@
                     </div>
                     <!-- End Arrow down -->
     
-                    <div v-for="(element, index) in slides" class="single-thumb" :class="{'active': currentImgCounter === index}">
+                    <div @click="changeSlide(index)" v-for="(element, index) in slides" class="single-thumb" :class="{'active': currentImgCounter === index}">
                         <img :src="element.img" :alt="element.title">
                     </div>
                 </div>
